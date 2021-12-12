@@ -1,0 +1,56 @@
+﻿  Collider.cpp
+  DragonEnemy.cpp
+C:\Users\user\Desktop\Development1\Platformer Game\Game\Source\Animation.h(54,19): warning C4244: 'initializing': conversion from 'const float' to 'int', possible loss of data
+C:\Users\user\Desktop\Development1\Platformer Game\Game\Source\Animation.h(56,30): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\user\Desktop\Development1\Platformer Game\Game\Source\DragonEnemy.h(14,12): warning C4099: 'Path': type name first seen using 'class' now seen using 'struct'
+C:\Users\user\Desktop\Development1\Platformer Game\Game\Source\Path.h(16): message : see declaration of 'Path'
+C:\Users\user\Desktop\Development1\Platformer Game\Game\Source\Point.h(51,3): error C2065: 'p2Vector2': undeclared identifier
+C:\Users\user\Desktop\Development1\Platformer Game\Game\Source\Point.h(50): message : while compiling class template member function 'Point<int> Point<int>::operator +(const Point<int> &) const'
+Source\DragonEnemy.cpp(57): message : see reference to function template instantiation 'Point<int> Point<int>::operator +(const Point<int> &) const' being compiled
+C:\Users\user\Desktop\Development1\Platformer Game\Game\Source\ModulePlayer.h(47): message : see reference to class template instantiation 'Point<int>' being compiled
+C:\Users\user\Desktop\Development1\Platformer Game\Game\Source\Point.h(51,13): error C2146: syntax error: missing ';' before identifier 'r'
+C:\Users\user\Desktop\Development1\Platformer Game\Game\Source\Point.h(51,13): error C2065: 'r': undeclared identifier
+C:\Users\user\Desktop\Development1\Platformer Game\Game\Source\Point.h(53,3): error C2065: 'r': undeclared identifier
+C:\Users\user\Desktop\Development1\Platformer Game\Game\Source\Point.h(54,3): error C2065: 'r': undeclared identifier
+C:\Users\user\Desktop\Development1\Platformer Game\Game\Source\Point.h(56,10): error C2065: 'r': undeclared identifier
+  GameOver.cpp
+  Map.cpp
+C:\Users\user\Desktop\Development1\Platformer Game\Game\Source\Map.h(31,22): error C3646: 'GetTileRect': unknown override specifier
+C:\Users\user\Desktop\Development1\Platformer Game\Game\Source\Map.h(31,22): error C2059: syntax error: '('
+C:\Users\user\Desktop\Development1\Platformer Game\Game\Source\Map.h(31,30): error C2238: unexpected token(s) preceding ';'
+Source\Map.cpp(87,29): error C2039: 'GetTileRect': is not a member of 'TileSet'
+C:\Users\user\Desktop\Development1\Platformer Game\Game\Source\Map.h(15): message : see declaration of 'TileSet'
+Source\Map.cpp(123,29): error C2039: 'GetTileRect': is not a member of 'TileSet'
+C:\Users\user\Desktop\Development1\Platformer Game\Game\Source\Map.h(15): message : see declaration of 'TileSet'
+Source\Map.cpp(151,29): error C2039: 'GetTileRect': is not a member of 'TileSet'
+C:\Users\user\Desktop\Development1\Platformer Game\Game\Source\Map.h(15): message : see declaration of 'TileSet'
+Source\Map.cpp(188,30): error C2039: 'GetTileRect': is not a member of 'TileSet'
+C:\Users\user\Desktop\Development1\Platformer Game\Game\Source\Map.h(15): message : see declaration of 'TileSet'
+Source\Map.cpp(220,19): warning C4244: '=': conversion from 'float' to 'TYPE', possible loss of data
+          with
+          [
+              TYPE=int
+          ]
+Source\Map.cpp(221,19): warning C4244: '=': conversion from 'float' to 'TYPE', possible loss of data
+          with
+          [
+              TYPE=int
+          ]
+Source\Map.cpp(243,23): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Source\Map.cpp(244,98): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Source\Map.cpp(273,19): error C2039: 'GetTileRect': is not a member of 'TileSet'
+C:\Users\user\Desktop\Development1\Platformer Game\Game\Source\Map.h(15): message : see declaration of 'TileSet'
+Source\Map.cpp(278,24): error C2065: 'firstgid': undeclared identifier
+Source\Map.cpp(279,11): error C2065: 'tileWidth': undeclared identifier
+Source\Map.cpp(280,11): error C2065: 'tileHeight': undeclared identifier
+Source\Map.cpp(281,11): error C2065: 'margin': undeclared identifier
+Source\Map.cpp(281,31): error C2065: 'spacing': undeclared identifier
+Source\Map.cpp(281,56): error C2065: 'columns': undeclared identifier
+Source\Map.cpp(282,11): error C2065: 'margin': undeclared identifier
+Source\Map.cpp(282,31): error C2065: 'spacing': undeclared identifier
+Source\Map.cpp(282,56): error C2065: 'columns': undeclared identifier
+  ModuleCollisions.cpp
+C:\Users\user\Desktop\Development1\Platformer Game\Game\Source\Animation.h(54,19): warning C4244: 'initializing': conversion from 'const float' to 'int', possible loss of data
+C:\Users\user\Desktop\Development1\Platformer Game\Game\Source\Animation.h(56,30): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Source\ModuleCollisions.cpp(85,12): warning C4101: 'c1': unreferenced local variable
+Source\ModuleCollisions.cpp(86,12): warning C4101: 'c2': unreferenced local variable

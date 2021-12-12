@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<save_state>
+	<window />
+	<:anonymous />
+	<input />
+	<textures />
+	<audio />
+	<:anonymous />
+	<scene />
+	<map />
+	<:anonymous />
+	<renderer>
+		<camera x="186" y="-480" />
+	</renderer>
+</save_state>
