@@ -58,7 +58,6 @@ public:
 	int speed = 1;
 	bool jumpState = false;
 	int jumpsCount;
-	bool running = false;
 	bool death;
 	
 	bool winCondition = false;

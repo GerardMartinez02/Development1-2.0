@@ -148,16 +148,7 @@ bool ModulePlayer::Update(float dt)
 	// L10: DONE: Implement gamepad support
 	if (destroyed == false)
 	{
-		if (app->input->GetKey(SDL_SCANCODE_LSHIFT) == KeyState::KEY_REPEAT)
-		{
-			running = true;
-		}
-
-		if (app->input->GetKey(SDL_SCANCODE_LSHIFT) == KeyState::KEY_IDLE)
-		{
-			running = false;
-		}
-		
+				
 		if (app->input->GetKey(SDL_SCANCODE_A) == KeyState::KEY_REPEAT)
 		{
 			if (pbody->body->GetLinearVelocity().x >= -2) pbody->body->ApplyLinearImpulse({ -1.0f,0 }, { 0,0 }, true);
@@ -168,7 +159,7 @@ bool ModulePlayer::Update(float dt)
 			}
 		}
 
-		if (app->input->GetKey(SDL_SCANCODE_A) == KeyState::KEY_REPEAT && running == true)
+		/*if (app->input->GetKey(SDL_SCANCODE_A) == KeyState::KEY_REPEAT && app->input->GetKey(SDL_SCANCODE_LSHIFT) == KeyState::KEY_REPEAT)
 		{
 			if (pbody->body->GetLinearVelocity().x >= -2) pbody->body->ApplyLinearImpulse({ -1.2f,0 }, { 0,0 }, true);
 			if (currentAnimation != &runLeftAnim)
@@ -176,7 +167,7 @@ bool ModulePlayer::Update(float dt)
 				runLeftAnim.Reset();
 				currentAnimation = &runLeftAnim;
 			}
-		}
+		}*/
 		
 		if (app->input->GetKey(SDL_SCANCODE_D) == KeyState::KEY_REPEAT)
 		{
@@ -188,7 +179,7 @@ bool ModulePlayer::Update(float dt)
 			}
 		}
 
-		if (app->input->GetKey(SDL_SCANCODE_D) == KeyState::KEY_REPEAT && running == true)
+		/*if (app->input->GetKey(SDL_SCANCODE_D) == KeyState::KEY_REPEAT && app->input->GetKey(SDL_SCANCODE_LSHIFT) == KeyState::KEY_REPEAT)
 		{
 			if (pbody->body->GetLinearVelocity().x <= +2) pbody->body->ApplyLinearImpulse({ 1.2f,0 }, { 0,0 }, true);
 			if (currentAnimation != &runRightAnim)
@@ -196,7 +187,7 @@ bool ModulePlayer::Update(float dt)
 				runRightAnim.Reset();
 				currentAnimation = &runRightAnim;
 			}
-		}
+		}*/
 
 		if (pbody->body->GetLinearVelocity().y == 0)
 		{

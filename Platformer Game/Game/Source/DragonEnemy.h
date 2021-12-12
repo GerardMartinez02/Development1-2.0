@@ -31,8 +31,11 @@ private:
 	// And an animation for each step
 
 	//NEED TO ADD THE ANIMATIONS
-	//Animation Right;
-	//Animation Left;
+	Animation idleAnim;
+	Animation leftAnim;
+	Animation leftShotAnim;
+	Animation rightAnim;
+	Animation rightShotAnim;
 
 	Path path;
 

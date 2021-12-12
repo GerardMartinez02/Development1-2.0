@@ -5,10 +5,8 @@
 #include "List.h"
 #include "Point.h"
 #include "Textures.h"
-#include "DynArray.h"
 
 #include "PugiXml\src\pugixml.hpp"
-
 
 // L03: DONE 2: Create a struct to hold information for a TileSet
 // Ignore Terrain Types and Tile Types for now, but we want the image!
@@ -28,7 +26,7 @@ struct TileSet
 	int	columns;
 
 	// L04: DONE 7: Create a method that receives a tile id and returns it's Rectfind the Rect associated with a specific tile id
-	SDL_Rect GetTileRect(int id);
+	SDL_Rect GetTileRect(int id) const;
 };
 
 // L03: DONE 1: We create an enum for map type, just for convenience,
@@ -128,7 +126,7 @@ struct MapData
 
 	// L04: DONE 2: Add a list/array of layers to the map
 	List<MapLayer*> layers;
-	List<MapObjects*> objects;
+	
 };
 
 class Map : public Module
@@ -153,6 +151,8 @@ public:
 
     // Load new map
     bool Load(const char* path);
+
+	bool Unload();
 
 	// L04: DONE 8: Create a method that translates x,y coordinates from map positions to world positions
 	iPoint MapToWorld(int x, int y) const;
